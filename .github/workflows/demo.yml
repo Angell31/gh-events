@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 jobs:
     deploy:
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
             - name: Get context 
               run: echo "${{toJson(github.event)}}" 
